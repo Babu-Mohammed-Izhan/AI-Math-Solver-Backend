@@ -11,6 +11,3 @@ class TestSum(unittest.TestCase):
     def test_ai_tuple(self):
         self.assertIn("[4, 5, 7]",ai(json.loads('{ "message": "Add [[2,5,7], [4,7,9]] and [[2,0,0], [2,2,2]]", "history" : [] }')), "Should be able to solve the maths equation")
         self.assertIn("[6, 9, 11]",ai(json.loads('{ "message": "Add [[2,5,7], [4,7,9]] and [[2,0,0], [2,2,2]]", "history" : [] }')), "Should be able to solve the maths equation")
-
-if __name__ == '__main__':
-    unittest.main()
