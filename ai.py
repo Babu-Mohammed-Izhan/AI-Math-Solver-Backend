@@ -4,8 +4,7 @@ import os
 import sys
 from _ai import *
 
-openai.api_key = "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"
-#os.getenv("KEY")
+openai.api_key = os.getenv("KEY")
 
 def chatcompletion(user_input,chat_history):
   output = openai.ChatCompletion.create(
